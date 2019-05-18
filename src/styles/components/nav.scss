@@ -1,0 +1,27 @@
+.nav {
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.nav_list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav_list-item {
+  list-style-type: none;
+
+}
+
+.nav_item-link {
+  text-decoration: none;
+  color: #4F4F4F;
+  padding: 0 40px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}

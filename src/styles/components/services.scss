@@ -1,0 +1,60 @@
+.services_wrap {
+  max-width: 1400px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.services_description {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 145%;
+  /* or 26px */
+
+  margin-bottom: 50px;
+  color: #000000;
+}
+
+.services_list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.services_item {
+  list-style-type: none;
+  display: flex;
+  max-width: 330px;
+  min-width: 290px;
+  margin-bottom: 50px;
+}
+
+.services_item-img {
+  margin-right: 14px;
+}
+
+.services_content-title {
+  font-family: 'ApercuPro-Medium';
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.services_content-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 145%;
+  /* or 23px */
+
+
+  color: #9596B2;
+}

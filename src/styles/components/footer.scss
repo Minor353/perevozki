@@ -1,0 +1,53 @@
+.footer {
+  background: #E1E5FE;
+}
+
+.footer_wrap {
+  display: flex;
+  max-width: 1400px;
+  padding: 18px 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  .msg_link {
+    height: min-content;
+  }
+}
+
+.footer_contact {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer_contact-item {
+  list-style-type: none;
+
+  a {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #4F4F4F;
+    padding: 0 20px;
+  }
+}
+
+
+.footer_copyrights {
+  background: #4C76FF;
+  padding: 12px 0;
+  text-align: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+
+  color: #FFFFFF;
+}

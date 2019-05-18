@@ -8,24 +8,25 @@ html(lang="ru")
         link(rel="stylesheet", href="assets/styles/app.min.css")
     body
         .wrapper
-            header
-                a(href="#").logo
-                    img(src="#", alt="logo")
-                nav
-                    ul.nav_list
-                        li.nav_list-item
-                            a(href="#").nav_item-link Главная
-                        li.nav_list-item
-                            a(href="#").nav_item-link Услуги
-                        li.nav_list-item
-                            a(href="#").nav_item-link Тарифы
-                        li.nav_list-item
-                            a(href="#").nav_item-link О нас
-                        li.nav_list-item
-                            a(href="#").nav_item-link Отзывы
-                a(href="tel:+123")
-                    img(src="#", alt="phone")
-                    div 123
+            header.header
+                .header_wrap
+                    a(href="#").logo
+                        img(src="assets/images/content/Logo.png", alt="logo")
+                    nav.nav
+                        ul.nav_list
+                            li.nav_list-item
+                                a(href="#").nav_item-link Главная
+                            li.nav_list-item
+                                a(href="#").nav_item-link Услуги
+                            li.nav_list-item
+                                a(href="#").nav_item-link Тарифы
+                            li.nav_list-item
+                                a(href="#").nav_item-link О нас
+                            li.nav_list-item
+                                a(href="#").nav_item-link Отзывы
+                    a(href="tel:+123").number-link
+                        img(src="assets/images/icons/phone-call.svg", alt="phone")
+                        div 123
             main
                 section.main
                     .main_wrap
@@ -34,95 +35,97 @@ html(lang="ru")
                             .main_content-text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
                             .main_form
                                 form(action="#", method="post")
-                                    input(type="text")
+                                    input(type="text" placeholder="+380 (_ _) ___ __ __")
                                     button(type="submit") Заказать звонок
                                     p *мы перезвоним Вам в течение 20 минут   
                         .main_paralax
                             .main_paralax-wrap
-                                img(src="#", alt="paralax")             
+                                img(src="assets/images/content/main.png", alt="paralax")             
                 section.msg
                     .msg_wrap
                         .msg_text Или напишите нам в телеграм
-                        a(href="#").msg_link telegram
+                        a(href="#").msg_link
+                            div telegram 
+                            img(src="assets/images/icons/telegram.svg", alt="telegram")
                 section.about-serv
                     .about-serv_wrap
-                        .about-serv_title О услугах
+                        h3.about-serv_title О услугах
                         .about-serv_text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов                      
                         ul.about-serv_list
                             li.about-serv_item
                                 .about-serv_item-img
-                                    img(src="#", alt="service")
+                                    img(src="assets/images/icons/racing.svg", alt="service")
                                 .about-serv_item-title Скорость
                                 .about-serv_item-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.about-serv_item
                                 .about-serv_item-img
-                                    img(src="#", alt="service")
+                                    img(src="assets/images/icons/shield.svg", alt="service")
                                 .about-serv_item-title Гарантия
                                 .about-serv_item-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.about-serv_item
                                 .about-serv_item-img
-                                    img(src="#", alt="service")
+                                    img(src="assets/images/icons/badge.svg", alt="service")
                                 .about-serv_item-title Качество
                                 .about-serv_item-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться   
                 section.services
                     .services_wrap
-                        .services_title Все виды услуг
+                        h3.services_title Все виды услуг
                         .services_description Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов  
                         ul.services_list
                             li.services_item
                                 .services_item-img
-                                    img(src="#", alt="services")
+                                    img(src="assets/images/icons/truck.svg", alt="services")
                                 .services_item-content
                                     .services_content-title Lorem Ipsum
                                     .services_content-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.services_item
                                 .services_item-img
-                                    img(src="#", alt="services")
+                                    img(src="assets/images/icons/truck.svg", alt="services")
                                 .services_item-content
                                     .services_content-title Lorem Ipsum
                                     .services_content-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.services_item
                                 .services_item-img
-                                    img(src="#", alt="services")
+                                    img(src="assets/images/icons/truck.svg", alt="services")
                                 .services_item-content
                                     .services_content-title Lorem Ipsum
                                     .services_content-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.services_item
                                 .services_item-img
-                                    img(src="#", alt="services")
+                                    img(src="assets/images/icons/truck.svg", alt="services")
                                 .services_item-content
                                     .services_content-title Lorem Ipsum
                                     .services_content-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.services_item
                                 .services_item-img
-                                    img(src="#", alt="services")
+                                    img(src="assets/images/icons/truck.svg", alt="services")
                                 .services_item-content
                                     .services_content-title Lorem Ipsum
                                     .services_content-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.services_item
                                 .services_item-img
-                                    img(src="#", alt="services")
+                                    img(src="assets/images/icons/truck.svg", alt="services")
                                 .services_item-content
                                     .services_content-title Lorem Ipsum
                                     .services_content-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.services_item
                                 .services_item-img
-                                    img(src="#", alt="services")
+                                    img(src="assets/images/icons/truck.svg", alt="services")
                                 .services_item-content
                                     .services_content-title Lorem Ipsum
                                     .services_content-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.services_item
                                 .services_item-img
-                                    img(src="#", alt="services")
+                                    img(src="assets/images/icons/truck.svg", alt="services")
                                 .services_item-content
                                     .services_content-title Lorem Ipsum
                                     .services_content-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                 section.price
                     .price_wrap
-                        .price_title Цены
+                        h3.price_title Цены
                         .price_content
                             .price_content-img
-                                img(src="#", alt="price")
+                                img(src="assets/images/content/workers.png", alt="price")
                             .price_content-tabs
                                 ul.price_tabs-list
                                     li.price_tabs-item
@@ -144,124 +147,136 @@ html(lang="ru")
                                 ul.price_tabs-content
                                     li.price_tabs-content-item
                                         .price_content-item-img
-                                            img(src="#", alt="price")
+                                            img(src="assets/images/icons/cement.svg", alt="price")
                                         .price_content-item-text Подъем строительных материалов, спуск строительного мусора
                                         .price_content-item-price от 150 грн
                                     li.price_tabs-content-item
                                         .price_content-item-img
-                                            img(src="#", alt="price")
+                                            img(src="assets/images/icons/screwdriver.svg", alt="price")
                                         .price_content-item-text Погрузка, переноска вещей, расставление груза в автомобиле
                                         .price_content-item-price от 150 грн
                                     li.price_tabs-content-item
                                         .price_content-item-img
-                                            img(src="#", alt="price")
+                                            img(src="assets/images/icons/packing.svg", alt="price")
                                         .price_content-item-text Разборка и сборка мебели электроинструментом
                                         .price_content-item-price от 150 грн
                                     li.price_tabs-content-item
                                         .price_content-item-img
-                                            img(src="#", alt="price")
+                                            img(src="assets/images/icons/piano.svg", alt="price")
                                         .price_content-item-text Такелажные работы
                                         .price_content-item-price от 150 грн     
                 section.stock
                     .stock_wrap
-                        .stock_content
-                            .stock_content-title Акция
-                            .stock_content-text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь
-                            a(href="#").stock_btn Участвовать
+                        .stock_wrap-img
+                            .stock_content
+                                h3.stock_content-title Акция
+                                .stock_content-text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь
+                                a(href="#").stock_btn Участвовать
                 section.about
                     .about_wrap
-                        .about_title О компании
+                        h3.about_title О компании
                         .about_content
                             .about_content-text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32 Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.
-                            .abot_content-slider
+                            .about_content-slider
                                 ul.about_slider-list
                                     li.about_slider-item
                                         .about_slider-item-content
-                                            .about_slider-item-title
+                                            .about_slider-item-title Фургон
                                             .about_slider-item-text
+                                                div Грузоподъемность
                                                 div
+                                                div до 2.5 т
+                                            .about_slider-item-text
+                                                div Обьем
                                                 div
-                                                div
+                                                div до 16 м3
                                         .about_slider-item-img
-                                            img(src="#", alt="car")
+                                            img(src="assets/images/content/car.png", alt="car")
                                 .about_slider-arrow
-                                    a(href="#").about_slider-prev prev
-                                    a(href="#").about_slider-next next
+                                    a(href="#").about_slider-prev
+                                        svg(width='72', height='27', viewBox='0 0 72 27', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M0.999999 13.4998L19.6668 25.9995L19.6668 18.7492L71 18.7492L71 8.24923L19.6668 8.24923L19.6668 0.99981L0.999999 13.4998Z', fill='', stroke='#2D24A3', stroke-linecap='round', stroke-linejoin='round')
+                                    a(href="#").about_slider-next
+                                        svg(width='72', height='27', viewBox='0 0 72 27', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M71 13.4997L52.3332 0.999999L52.3332 8.25027L1 8.25027L0.999999 18.7503L52.3332 18.7503L52.3332 25.9997L71 13.4997Z', stroke='#2D24A3', stroke-linecap='round', stroke-linejoin='round')
                 section.advantages
                     .advantages_wrap
                         ul.advantages_list
                             li.advantages_list-item
                                 .advantages_item-front
                                     .advantages_front-img
-                                        img(src="#", alt="advantages")
+                                        img(src="assets/images/icons/racing.svg", alt="advantages")
                                     .advantages_front-title Качество
                                 .advantages_item-back
                                     .advantages_back-content Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.advantages_list-item
                                 .advantages_item-front
                                     .advantages_front-img
-                                        img(src="#", alt="advantages")
+                                        img(src="assets/images/icons/badge.svg", alt="advantages")
                                     .advantages_front-title Гарантия
                                 .advantages_item-back
                                     .advantages_back-content Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.advantages_list-item
                                 .advantages_item-front
                                     .advantages_front-img
-                                        img(src="#", alt="advantages")
+                                        img(src="assets/images/icons/shield.svg", alt="advantages")
                                     .advantages_front-title Качество
                                 .advantages_item-back
                                     .advantages_back-content Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.advantages_list-item
                                 .advantages_item-front
                                     .advantages_front-img
-                                        img(src="#", alt="advantages")
+                                        img(src="assets/images/icons/badge.svg", alt="advantages")
                                     .advantages_front-title Гарантия
                                 .advantages_item-back
                                     .advantages_back-content Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.advantages_list-item
                                 .advantages_item-front
                                     .advantages_front-img
-                                        img(src="#", alt="advantages")
+                                        img(src="assets/images/icons/shield.svg", alt="advantages")
                                     .advantages_front-title Качество
                                 .advantages_item-back
                                     .advantages_back-content Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                             li.advantages_list-item
                                 .advantages_item-front
                                     .advantages_front-img
-                                        img(src="#", alt="advantages")
+                                        img(src="assets/images/icons/racing.svg", alt="advantages")
                                     .advantages_front-title Скорость
                                 .advantages_item-back
                                     .advantages_back-content Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                 section.reviews
                     .reviews_wrap
+                        h3.reviews_title Отзывы
                         .reviews_slider
                             .reviews_slider-item
                                 .reviews_item-content
                                     .reviews_content-img
-                                        img(src="#", alt="foto")
-                                    .reviews_content-text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинскийLorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-                                    .reviews_content-name Джон Доу
+                                        img(src="assets/images/content/ava.png", alt="foto")
+                                    .reviews_content-wrap
+                                        .reviews_content-text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинскийLorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                                        .reviews_content-name Джон Доу
                             .reviews_slider-item
                                 .reviews_item-content
                                     .reviews_content-img
-                                        img(src="#", alt="foto")
-                                    .reviews_content-text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинскийLorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-                                    .reviews_content-name Джон Доу
+                                        img(src="assets/images/content/ava.png", alt="foto")
+                                    .reviews_content-wrap
+                                        .reviews_content-text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинскийLorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                                        .reviews_content-name Джон Доу
                 section.form
                     .form_wrap
                         form(action="#", method="post").form_form
-                            .form_title
-                            .form_text
+                            .form_title Переезд - смелое решение
+                            .form_text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова
                             .form_form-input
                                 label Ваше имя
-                                    input(type="text")
+                                    input(type="text" placeholder="Как к Вам обращаться")
                                 label Ваш номер
-                                    input(type="text")
+                                    input(type="text" placeholder="+380 (__) ___ __ __")
                                 button(type="submit").form_btn заказать звонок
             footer.footer
                 .footer_wrap
                     .footer_logo
-                        img(src="#", alt="logo")
+                        img(src="assets/images/content/Logo.png", alt="logo")
                     ul.footer_contact
                         li.footer_contact-item
                             a(href="#") г. Днепр, ул. К. Маркса 237
@@ -269,8 +284,12 @@ html(lang="ru")
                             a(href="mailto:") example@mail.com
                         li.footer_contact-item
                             a(href="tel:+") +380 93 123 45 67
-                    a(href="#") telegram
-                    a(href="#") 123
+                    a(href="#").msg_link
+                        div telegram 
+                        img(src="assets/images/icons/telegram.svg", alt="telegram")
+                    a(href="tel:+123").number-link
+                        img(src="assets/images/icons/phone-call.svg", alt="phone")
+                        div 123
                 .footer_copyrights Cargo. Development by AS - All right reserves
 
                         

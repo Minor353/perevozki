@@ -1,0 +1,56 @@
+.reviews_wrap {
+  max-width: 1400px;
+  padding: 0 25px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.reviews_slider {
+  display: flex;
+  /*Убрать при подключении плагина слайдера*/
+}
+
+.reviews_item-content {
+  display: flex;
+  background-color: #FFFFFF;
+  background-image: url('../images/icons/reviews_bg.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* blue_shadow */
+  padding: 40px;
+  padding-bottom: 60px;
+  box-shadow: 0px 7px 15px rgba(0, 42, 179, 0.25);
+  border-radius: 10px;
+}
+
+.reviews_content-img {
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+  }
+
+  margin-right: 40px;
+}
+
+.reviews_content-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 145%;
+  /* or 23px */
+
+  margin-bottom: 48px;
+  color: #000000;
+}
+
+.reviews_content-name {
+  font-family: 'ApercuPro-Medium';
+  font-size: 20px;
+  line-height: 100%;
+
+  color: #333333;
+}

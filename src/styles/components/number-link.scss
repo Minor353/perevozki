@@ -1,0 +1,23 @@
+.number-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 45px;
+  background: #FFB127;
+  /* yellow_shadow */
+
+  box-shadow: 0px 7px 15px rgba(128, 81, 0, 0.35);
+  border-radius: 30px;
+
+  text-decoration: none;
+  color: #fff;
+
+  font-family: 'ApercuPro-Medium';
+  font-size: 24px;
+  line-height: 30px;
+
+  div {
+    margin-left: 20px;
+  }
+}

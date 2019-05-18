@@ -1,0 +1,90 @@
+.about_wrap {
+  max-width: 1400px;
+  padding: 15px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 130px;
+}
+
+.about_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_content-text {
+  width: 40%;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+
+  color: #000000;
+}
+
+.about_content-slider {
+  width: 44%;
+  background-image: url('../images/content/road.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.about_slider-list {
+  padding: 0;
+  margin: 0;
+}
+
+.about_slider-item {
+  list-style-type: none;
+}
+
+.about_slider-item-content {
+  margin-bottom: 65px;
+}
+
+.about_slider-item-title {
+  font-family: 'ApercuPro-Medium';
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height */
+  margin-bottom: 20px;
+
+  color: #2D24A3;
+}
+
+.about_slider-item-text {
+  display: flex;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+
+  /* identical to box height */
+  div:nth-child(2) {
+    border-bottom: 1px solid #DBDBFF;
+    flex: 1;
+    margin: 0 20px;
+  }
+
+  color: #000000;
+}
+
+.about_slider-item-img {
+  padding-left: 60px;
+}
+
+.about_slider-arrow {
+  display: flex;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+.about_slider-prev {
+  margin-right: 300px;
+}

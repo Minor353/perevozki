@@ -1,0 +1,61 @@
+.about-serv_wrap {
+  max-width: 1400px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.about-serv_text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 145%;
+  /* or 26px */
+
+
+  color: #000000;
+  margin-bottom: 59px;
+}
+
+.about-serv_list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about-serv_item {
+  list-style-type: none;
+  max-width: 440px;
+  min-width: 380px;
+  margin: 0 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-serv_item-title {
+  font-family: 'ApercuPro-Medium';
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 30px 0;
+  color: #2D24A3;
+}
+
+.about-serv_item-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 145%;
+  /* or 23px */
+
+  text-align: center;
+
+  color: #000000;
+}
