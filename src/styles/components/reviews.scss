@@ -8,10 +8,10 @@
 
 .reviews_slider {
   display: flex;
-  /*Убрать при подключении плагина слайдера*/
 }
 
 .reviews_item-content {
+  margin: 18px;
   display: flex;
   background-color: #FFFFFF;
   background-image: url('../images/icons/reviews_bg.svg');

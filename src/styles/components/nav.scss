@@ -24,4 +24,9 @@
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.nav_item-link:hover {
+  color: #FFB127;
 }

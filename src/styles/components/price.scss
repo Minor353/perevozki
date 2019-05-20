@@ -31,6 +31,7 @@
   background: #F6F6FD;
   border-radius: 10px;
   margin-bottom: 45px;
+  overflow: hidden;
 }
 
 .price_tabs-item {
@@ -49,6 +50,21 @@
   color: #333333;
   border: 1px solid #DBDBFF;
   border-top-color: transparent;
+  transition: 0.3s;
+}
+
+.price_tabs-item:hover {
+  background: #E1E5FE;
+}
+
+.price_tabs-item--active {
+  background: #4C76FF;
+  color: #FFFFFF;
+}
+
+.price_tabs-item--active:hover {
+  background: #4C76FF;
+  color: #FFFFFF;
 }
 
 .price_tabs-item:nth-child(1),
