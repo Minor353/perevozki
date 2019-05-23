@@ -1,8 +1,16 @@
+.price {
+  background-image: url('../images/content/price-bg.png');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 35% 90%;
+}
+
 .price_wrap {
   max-width: 1400px;
   padding: 0 15px;
   box-sizing: border-box;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .price_content {
@@ -89,6 +97,13 @@
 .price_tabs-content {
   padding: 0;
   margin: 0;
+  display: none;
+  opacity: 0;
+}
+
+.price_tabs-content--active {
+  display: block;
+  opacity: 1;
 }
 
 .price_tabs-content-item {

@@ -16,19 +16,20 @@ html(lang="ru")
                     nav.nav
                         ul.nav_list
                             li.nav_list-item
-                                a(href="#").nav_item-link Главная
+                                a(href="#main").nav_item-link Главная
                             li.nav_list-item
-                                a(href="#").nav_item-link Услуги
+                                a(href="#about").nav_item-link Услуги
                             li.nav_list-item
-                                a(href="#").nav_item-link Тарифы
+                                a(href="#price").nav_item-link Тарифы
                             li.nav_list-item
-                                a(href="#").nav_item-link О нас
+                                a(href="#about-us").nav_item-link О нас
                             li.nav_list-item
-                                a(href="#").nav_item-link Отзывы
+                                a(href="#reviews").nav_item-link Отзывы
                     a(href="tel:+123").number-link
                         img(src="assets/images/icons/phone-call.svg", alt="phone")
                         div 123
             main
+                a(href="#")#main
                 section.main
                     .main_wrap
                         .main_content
@@ -4014,6 +4015,7 @@ html(lang="ru")
                             svg(width='28', height='28', viewBox='0 0 30 30', fill='none', xmlns='http://www.w3.org/2000/svg')
                                 path(d='M0.529889 14.4645L7.44249 17.0445L10.1181 25.6492C10.2893 26.2003 10.9632 26.404 11.4105 26.0383L15.2637 22.8971C15.6676 22.568 16.2429 22.5516 16.665 22.858L23.6148 27.9037C24.0933 28.2515 24.7712 27.9893 24.8912 27.4111L29.9823 2.92201C30.1133 2.29041 29.4927 1.76351 28.8913 1.99611L0.521789 12.9402C-0.178311 13.2102 -0.172212 14.2014 0.529889 14.4645ZM9.68689 15.6711L23.1967 7.35041C23.4395 7.20131 23.6893 7.52961 23.4808 7.72301L12.3313 18.087C11.9394 18.4518 11.6866 18.94 11.615 19.4699L11.2352 22.2845C11.1849 22.6603 10.657 22.6976 10.5533 22.3339L9.09259 17.2014C8.92529 16.616 9.16909 15.9907 9.68689 15.6711Z', fill='#4C76FF')
                 section.about-serv
+                    a(href="#")#about
                     .about-serv_wrap
                         h3.about-serv_title О услугах
                         .about-serv_text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов                      
@@ -4087,6 +4089,7 @@ html(lang="ru")
                                     .services_content-title Lorem Ipsum
                                     .services_content-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                 section.price
+                    a(href="#")#price
                     .price_wrap
                         h3.price_title Цены
                         .price_content
@@ -4110,7 +4113,7 @@ html(lang="ru")
                                         .price_tabs-btn Тариф «Макси»
                                     li.price_tabs-item
                                         .price_tabs-btn Тариф «Микро»
-                                ul.price_tabs-content
+                                ul.price_tabs-content.price_tabs-content--active
                                     li.price_tabs-content-item
                                         .price_content-item-img
                                             img(src="assets/images/icons/cement.svg", alt="price")
@@ -4130,7 +4133,154 @@ html(lang="ru")
                                         .price_content-item-img
                                             img(src="assets/images/icons/piano.svg", alt="price")
                                         .price_content-item-text Такелажные работы
-                                        .price_content-item-price от 150 грн     
+                                        .price_content-item-price от 150 грн  
+                                ul.price_tabs-content
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/cement.svg", alt="price")
+                                        .price_content-item-text Подъем строительных материалов, спуск строительного мусора
+                                        .price_content-item-price от 151 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/screwdriver.svg", alt="price")
+                                        .price_content-item-text Погрузка, переноска вещей, расставление груза в автомобиле
+                                        .price_content-item-price от 151 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/packing.svg", alt="price")
+                                        .price_content-item-text Разборка и сборка мебели электроинструментом
+                                        .price_content-item-price от 151 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/piano.svg", alt="price")
+                                        .price_content-item-text Такелажные работы
+                                        .price_content-item-price от 151 грн 
+                                ul.price_tabs-content
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/cement.svg", alt="price")
+                                        .price_content-item-text Подъем строительных материалов, спуск строительного мусора
+                                        .price_content-item-price от 152 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/screwdriver.svg", alt="price")
+                                        .price_content-item-text Погрузка, переноска вещей, расставление груза в автомобиле
+                                        .price_content-item-price от 152 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/packing.svg", alt="price")
+                                        .price_content-item-text Разборка и сборка мебели электроинструментом
+                                        .price_content-item-price от 152 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/piano.svg", alt="price")
+                                        .price_content-item-text Такелажные работы
+                                        .price_content-item-price от 152 грн 
+                                ul.price_tabs-content
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/cement.svg", alt="price")
+                                        .price_content-item-text Подъем строительных материалов, спуск строительного мусора
+                                        .price_content-item-price от 153 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/screwdriver.svg", alt="price")
+                                        .price_content-item-text Погрузка, переноска вещей, расставление груза в автомобиле
+                                        .price_content-item-price от 153 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/packing.svg", alt="price")
+                                        .price_content-item-text Разборка и сборка мебели электроинструментом
+                                        .price_content-item-price от 153 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/piano.svg", alt="price")
+                                        .price_content-item-text Такелажные работы
+                                        .price_content-item-price от 153 грн 
+                                ul.price_tabs-content
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/cement.svg", alt="price")
+                                        .price_content-item-text Подъем строительных материалов, спуск строительного мусора
+                                        .price_content-item-price от 154 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/screwdriver.svg", alt="price")
+                                        .price_content-item-text Погрузка, переноска вещей, расставление груза в автомобиле
+                                        .price_content-item-price от 154 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/packing.svg", alt="price")
+                                        .price_content-item-text Разборка и сборка мебели электроинструментом
+                                        .price_content-item-price от 154 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/piano.svg", alt="price")
+                                        .price_content-item-text Такелажные работы
+                                        .price_content-item-price от 154 грн 
+                                ul.price_tabs-content
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/cement.svg", alt="price")
+                                        .price_content-item-text Подъем строительных материалов, спуск строительного мусора
+                                        .price_content-item-price от 155 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/screwdriver.svg", alt="price")
+                                        .price_content-item-text Погрузка, переноска вещей, расставление груза в автомобиле
+                                        .price_content-item-price от 155 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/packing.svg", alt="price")
+                                        .price_content-item-text Разборка и сборка мебели электроинструментом
+                                        .price_content-item-price от 155 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/piano.svg", alt="price")
+                                        .price_content-item-text Такелажные работы
+                                        .price_content-item-price от 155 грн 
+                                ul.price_tabs-content
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/cement.svg", alt="price")
+                                        .price_content-item-text Подъем строительных материалов, спуск строительного мусора
+                                        .price_content-item-price от 156 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/screwdriver.svg", alt="price")
+                                        .price_content-item-text Погрузка, переноска вещей, расставление груза в автомобиле
+                                        .price_content-item-price от 156 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/packing.svg", alt="price")
+                                        .price_content-item-text Разборка и сборка мебели электроинструментом
+                                        .price_content-item-price от 156 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/piano.svg", alt="price")
+                                        .price_content-item-text Такелажные работы
+                                        .price_content-item-price от 156 грн 
+                                ul.price_tabs-content
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/cement.svg", alt="price")
+                                        .price_content-item-text Подъем строительных материалов, спуск строительного мусора
+                                        .price_content-item-price от 157 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/screwdriver.svg", alt="price")
+                                        .price_content-item-text Погрузка, переноска вещей, расставление груза в автомобиле
+                                        .price_content-item-price от 157 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/packing.svg", alt="price")
+                                        .price_content-item-text Разборка и сборка мебели электроинструментом
+                                        .price_content-item-price от 157 грн
+                                    li.price_tabs-content-item
+                                        .price_content-item-img
+                                            img(src="assets/images/icons/piano.svg", alt="price")
+                                        .price_content-item-text Такелажные работы
+                                        .price_content-item-price от 157 грн    
                 section.stock
                     .stock_wrap
                         .stock_wrap-img
@@ -4139,6 +4289,7 @@ html(lang="ru")
                                 .stock_content-text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь
                                 a(href="#").stock_btn Участвовать
                 section.about
+                    a(href="#")#about-us
                     .about_wrap
                         h3.about_title О компании
                         .about_content
@@ -4152,6 +4303,32 @@ html(lang="ru")
                                                 div Грузоподъемность
                                                 div
                                                 div до 2.5 т
+                                            .about_slider-item-text
+                                                div Обьем
+                                                div
+                                                div до 16 м3
+                                        .about_slider-item-img
+                                            img(src="assets/images/content/car.png", alt="car")
+                                    li.about_slider-item
+                                        .about_slider-item-content
+                                            .about_slider-item-title Фургон
+                                            .about_slider-item-text
+                                                div Грузоподъемность
+                                                div
+                                                div до 5.5 т
+                                            .about_slider-item-text
+                                                div Обьем
+                                                div
+                                                div до 16 м3
+                                        .about_slider-item-img
+                                            img(src="assets/images/content/car.png", alt="car")
+                                    li.about_slider-item
+                                        .about_slider-item-content
+                                            .about_slider-item-title Фургон
+                                            .about_slider-item-text
+                                                div Грузоподъемность
+                                                div
+                                                div до 4.5 т
                                             .about_slider-item-text
                                                 div Обьем
                                                 div
@@ -4211,6 +4388,7 @@ html(lang="ru")
                                 .advantages_item-back
                                     .advantages_back-content Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
                 section.reviews
+                    a(href="#")#reviews
                     .reviews_wrap
                         h3.reviews_title Отзывы
                         .reviews_slider
