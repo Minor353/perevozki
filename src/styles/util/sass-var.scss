@@ -4,12 +4,28 @@ $black: #000;
 
 
 
-$laptop: 1200px;
+$laptop: 1250px;
+
+$pretablet: 900px;
 
 $tablet: 768px;
 
+$mintablet: 650px;
+
 $phone: 480px;
 
+
+@mixin laptop {
+    @media screen and (max-width:$laptop) {
+        @content;
+    }
+}
+
+@mixin pretablet {
+    @media screen and (max-width:$pretablet) {
+        @content;
+    }
+}
 
 @mixin tablet {
     @media screen and (max-width:$tablet) {
@@ -17,7 +33,13 @@ $phone: 480px;
     }
 }
 
-@mixin mobile {
+@mixin mintablet {
+    @media screen and (max-width:$mintablet) {
+        @content;
+    }
+}
+
+@mixin phone {
     @media screen and (max-width:$phone) {
         @content;
     }

@@ -28,6 +28,10 @@ html(lang="ru")
                     a(href="tel:+123").number-link
                         img(src="assets/images/icons/phone-call.svg", alt="phone")
                         div 123
+                    svg.ham.hamRotate.ham8(viewBox='0 0 100 100', width='80', onclick="this.classList.toggle('active')")
+                        path.line.top(d='m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20')
+                        path.line.middle(d='m 30,50 h 40')
+                        path.line.bottom(d='m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20')              
             main
                 a(href="#")#main
                 section.main
@@ -4017,7 +4021,7 @@ html(lang="ru")
                 section.about-serv
                     a(href="#")#about
                     .about-serv_wrap
-                        h3.about-serv_title О услугах
+                        h3.about-serv_title Об услугах
                         .about-serv_text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов                      
                         ul.about-serv_list
                             li.about-serv_item
@@ -4035,6 +4039,7 @@ html(lang="ru")
                                     img(src="assets/images/icons/badge.svg", alt="service")
                                 .about-serv_item-title Качество
                                 .about-serv_item-text Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться   
+                        .about-serv_decor
                 section.services
                     .services_wrap
                         h3.services_title Все виды услуг
@@ -4387,6 +4392,7 @@ html(lang="ru")
                                     .advantages_front-title Скорость
                                 .advantages_item-back
                                     .advantages_back-content Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться
+                        .advantages_decor
                 section.reviews
                     a(href="#")#reviews
                     .reviews_wrap

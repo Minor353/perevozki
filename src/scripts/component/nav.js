@@ -12,5 +12,15 @@ module.exports = function () {
     $('body,html').animate({
       scrollTop: top - 55
     }, 1200);
+    navPanel.classList.remove('nav--active');
+    burger.classList.remove('active');
   });
+
+
+  const burger = document.querySelector('.ham');
+  const navPanel = document.querySelector('.nav');
+
+  burger.addEventListener('click', function () {
+    navPanel.classList.toggle('nav--active');
+  })
 }

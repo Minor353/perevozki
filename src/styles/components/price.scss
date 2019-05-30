@@ -3,6 +3,12 @@
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 35% 90%;
+
+  @include laptop() {
+    background-image: url('../images/content/price-opacity-bg.jpg');
+    background-size: cover;
+    padding-top: 1px;
+  }
 }
 
 .price_wrap {
@@ -13,12 +19,22 @@
   margin-bottom: 100px;
 }
 
+.price_title {
+  @include laptop() {
+    margin-top: 40px;
+  }
+}
+
 .price_content {
   display: flex;
 }
 
 .price_content-img {
   width: 50%;
+
+  @include laptop() {
+    display: none;
+  }
 
   img {
     width: 100%;
@@ -28,7 +44,15 @@
 }
 
 .price_content-tabs {
-  width: 50%;
+  width: 70%;
+
+  @include laptop() {
+    margin: 0 auto;
+  }
+
+  @include tablet() {
+    width: 100%;
+  }
 }
 
 .price_tabs-list {
@@ -59,6 +83,10 @@
   border: 1px solid #DBDBFF;
   border-top-color: transparent;
   transition: 0.3s;
+
+  @include phone() {
+    width: 50%;
+  }
 }
 
 .price_tabs-item:hover {
@@ -82,7 +110,22 @@
 
 .price_tabs-item:nth-child(4),
 .price_tabs-item:nth-child(8) {
+  @include phone() {
+    border-right: transparent;
+  }
+
+}
+
+.price_tabs-item:nth-child(2),
+.price_tabs-item:nth-child(6) {
   border-right: transparent;
+}
+
+.price_tabs-item:nth-child(3),
+.price_tabs-item:nth-child(7) {
+  @include phone() {
+    border-left: transparent;
+  }
 }
 
 .price_tabs-item:nth-child(5),
@@ -90,6 +133,10 @@
 .price_tabs-item:nth-child(7),
 .price_tabs-item:nth-child(8) {
   border-bottom-color: transparent;
+
+  @include phone() {
+    border-bottom-color: #DBDBFF;
+  }
 }
 
 
@@ -113,10 +160,21 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #F6F6FD;
   margin-bottom: 27px;
+
+  @include phone() {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .price_content-item-img {
   margin-right: 30px;
+
+  @include phone() {
+    margin: 0;
+  }
 }
 
 .price_content-item-text {
@@ -127,6 +185,7 @@
   line-height: 145%;
   max-width: 400px;
   color: #4F4F4F;
+  margin-right: 5px;
 }
 
 .price_content-item-price {
@@ -138,4 +197,10 @@
   border-radius: 5px;
   color: #1D1D1B;
   margin-left: auto;
+  min-width: 94px;
+
+  @include phone() {
+    margin: 0;
+    margin-top: 5px;
+  }
 }

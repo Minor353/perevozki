@@ -4,26 +4,40 @@
 
 .footer_wrap {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1400px;
-  padding: 18px 15px;
+  padding: 0px 15px;
   box-sizing: border-box;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   .msg_link {
     height: min-content;
+    margin: 18px 0;
   }
+
+  .number-link {
+    margin: 18px 0;
+  }
+}
+
+.footer_logo {
+  margin: 18px 0;
 }
 
 .footer_contact {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
 }
 
 .footer_contact-item {
   list-style-type: none;
+  margin: 18px 0;
 
   a {
     font-family: Lato;

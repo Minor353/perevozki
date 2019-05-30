@@ -9,6 +9,10 @@
 .about_content {
   display: flex;
   justify-content: space-between;
+
+  @include laptop() {
+    flex-direction: column;
+  }
 }
 
 .about_content-text {
@@ -22,6 +26,12 @@
 
 
   color: #000000;
+
+  @include laptop() {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 .about_content-slider {
@@ -30,6 +40,10 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @include laptop() {
+    width: 100%;
+  }
 
 }
 
@@ -91,6 +105,10 @@
   padding-bottom: 15px;
   padding-left: 20px;
 
+  @include laptop() {
+    justify-content: center;
+  }
+
   a {
     svg {
       path {
@@ -112,4 +130,8 @@
 
 .about_slider-prev {
   margin-right: 300px;
+
+  @include phone() {
+    margin-right: 30px;
+  }
 }

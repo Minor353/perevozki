@@ -1,6 +1,25 @@
 .advantages_wrap {
   max-width: 1400px;
   margin: 0 auto;
+  position: relative;
+}
+
+.advantages_decor {
+  position: absolute;
+  bottom: -121px;
+  right: -1700px;
+  width: 77px;
+  height: 136px;
+  background-image: url('../images/content/balun.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: moveBaloon 4.5s infinite ease-in-out;
+  transition: 0.8s;
+}
+
+.advantages_decor--active {
+  right: -77px;
 }
 
 .advantages_list {
@@ -15,12 +34,21 @@
   list-style-type: none;
   position: relative;
   padding: 20px 40px;
-  width: 466px;
+  width: 33.3%;
   box-sizing: border-box;
   text-align: center;
   border-bottom: 1px solid #DBDBFF;
   border-right: 1px solid #DBDBFF;
   cursor: pointer;
+
+  @include laptop() {
+    width: 466px;
+    border-right-color: transparent;
+  }
+
+  @include tablet() {
+    width: 100%;
+  }
 }
 
 .advantages_list-item:nth-child(3),
@@ -32,6 +60,10 @@
 .advantages_list-item:nth-child(5),
 .advantages_list-item:nth-child(6) {
   border-bottom-color: transparent;
+
+  @include laptop() {
+    border-bottom-color: #DBDBFF;
+  }
 }
 
 .advantages_front-title {

@@ -3,6 +3,25 @@
   padding: 0 15px;
   box-sizing: border-box;
   margin: 0 auto;
+  position: relative;
+}
+
+.about-serv_decor {
+  position: absolute;
+  bottom: -121px;
+  left: -1750px;
+  width: 211px;
+  height: 141px;
+  background-image: url('../images/content/copter.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: moveCopter 4.5s infinite ease-in-out;
+  transition: 0.8s;
+}
+
+.about-serv_decor--active {
+  left: -175px;
 }
 
 .about-serv_text {
@@ -16,6 +35,14 @@
 
   color: #000000;
   margin-bottom: 59px;
+
+  @include laptop() {
+    text-align: center;
+  }
+
+  @include phone() {
+    font-size: 16px;
+  }
 }
 
 .about-serv_list {
@@ -30,10 +57,21 @@
   list-style-type: none;
   max-width: 440px;
   min-width: 380px;
+  padding: 8px 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
   margin: 0 8px;
   margin-bottom: 30px;
   text-align: center;
+  transition: 0.3s;
 }
+
+.about-serv_item:hover {
+  box-shadow: 0px 7px 15px rgba(0, 42, 179, 0.25);
+  transform: translateY(-5px);
+}
+
+
 
 .about-serv_item-title {
   font-family: 'ApercuPro-Medium';

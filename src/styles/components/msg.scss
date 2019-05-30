@@ -7,6 +7,12 @@
   justify-content: center;
   background: #4C76FF;
   border-radius: 15px;
+
+  @include laptop() {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .msg_text {
@@ -14,6 +20,15 @@
   font-size: 38px;
   line-height: 47px;
   color: #FFFFFF;
+
+  @include laptop() {
+    margin-bottom: 15px;
+  }
+
+  @include phone() {
+    font-size: 30px;
+    line-height: 33px;
+  }
 }
 
 .msg_link {
@@ -26,8 +41,13 @@
   display: flex;
   align-items: center;
   padding: 8px 40px;
+  width: min-content;
   margin-left: 35px;
   transition: 0.3s;
+
+  @include laptop() {
+    margin-left: 0;
+  }
 
   div {
     font-family: 'ApercuPro-Medium';

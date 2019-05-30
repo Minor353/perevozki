@@ -6,6 +6,10 @@
   height: 100vh;
   padding-top: 100px;
   box-sizing: border-box;
+
+  @include phone() {
+    height: auto;
+  }
 }
 
 .main_wrap {
@@ -21,6 +25,13 @@
   width: 47%;
   height: min-content;
   margin: auto 0;
+
+  @include laptop() {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+  }
 }
 
 .main_content-title {
@@ -30,6 +41,11 @@
   letter-spacing: 0.07em;
   margin-bottom: 30px;
   color: #FFB127;
+
+  @include phone() {
+    font-size: 48px;
+    line-height: 52px;
+  }
 }
 
 .main_content-text {
@@ -38,13 +54,15 @@
   font-weight: normal;
   font-size: 22px;
   line-height: 135%;
-  /* or 30px */
-
   letter-spacing: 0.03em;
-
   color: #000000;
-
   margin-bottom: 80px;
+
+  @include phone() {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
 }
 
 .main_form {
@@ -56,7 +74,12 @@
     padding: 13px 30px;
     width: 270px;
     margin-right: 30px;
+    margin-bottom: 16px;
     outline: none;
+
+    @include phone() {
+      margin-right: 0;
+    }
   }
 
   button {
@@ -103,6 +126,21 @@
 .main_paralax {
   width: 53%;
   position: relative;
+
+  @include laptop() {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../images/content/main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.3;
+    z-index: 1;
+  }
 }
 
 .main_paralax-wrap {
@@ -111,6 +149,10 @@
   top: 0;
   width: 50vw;
   height: 100%;
+
+  @include laptop() {
+    display: none;
+  }
 
   svg {
     width: 100%;

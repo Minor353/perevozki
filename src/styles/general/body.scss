@@ -9,4 +9,9 @@ h3 {
   color: #FFB127;
   margin-top: 100px;
   margin-bottom: 30px;
+
+  @include phone() {
+    margin-top: 55px;
+    font-size: 40px;
+  }
 }

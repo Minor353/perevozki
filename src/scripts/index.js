@@ -1,6 +1,3 @@
-const headerAnimate = require('./component/headerAnimate.js');
-headerAnimate();
-
 const reviews = require('./component/reviews.js');
 reviews();
 
@@ -16,3 +13,6 @@ about();
 
 const nav = require('./component/nav.js');
 nav();
+
+const scrollAnimate = require('./component/scrollAnimate.js');
+scrollAnimate();

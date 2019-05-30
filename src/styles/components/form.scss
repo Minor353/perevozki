@@ -9,6 +9,14 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
+
+  @include laptop() {
+    background-size: cover;
+  }
+
+  @include phone() {
+    height: 525px;
+  }
 }
 
 .form_wrap::after {
@@ -24,6 +32,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @include phone() {
+    display: none;
+  }
 }
 
 .form_form {
@@ -33,6 +45,10 @@
   max-width: 860px;
   padding: 40px;
   box-sizing: border-box;
+
+  @include phone() {
+    padding: 15px;
+  }
 }
 
 .form_title {
@@ -44,6 +60,11 @@
   text-align: center;
 
   color: #000000;
+
+  @include phone() {
+    font-size: 25px;
+    line-height: 36px;
+  }
 }
 
 .form_text {
@@ -57,6 +78,10 @@
   text-align: center;
   margin-bottom: 40px;
   color: #000000;
+
+  @include phone() {
+    margin-bottom: 20px;
+  }
 }
 
 .form_form-input {
@@ -72,6 +97,12 @@
 
     color: #000000;
     margin-bottom: 50px;
+
+    @include phone() {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
   }
 
   input {

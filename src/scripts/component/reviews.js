@@ -9,7 +9,7 @@ module.exports = function () {
     slidesToShow: 2,
     slidesToScroll: 2,
     responsive: [{
-        breakpoint: 1024,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

@@ -16,17 +16,35 @@
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
+
+  @include laptop() {
+    background-image: url('../images/content/box-store-opacity.png');
+    padding: 40px 50px;
+  }
+
+  @include phone() {
+    padding: 20px 15px;
+  }
 }
 
 .stock_content {
   width: 50%;
   margin-left: auto;
 
+  @include laptop() {
+    width: 100%;
+    text-align: center;
+  }
+
   .stock_content-title {
     margin: 0;
     color: #fff;
     text-align: left;
     margin-bottom: 30px;
+
+    @include laptop() {
+      text-align: center;
+    }
   }
 }
 
@@ -40,6 +58,10 @@
   margin-bottom: 100px;
 
   color: #FFFFFF;
+
+  @include laptop() {
+    margin-bottom: 50px;
+  }
 }
 
 .stock_btn {
@@ -62,6 +84,10 @@
   color: #4F79FF;
   width: min-content;
   transition: 0.3s;
+
+  @include laptop() {
+    margin: 0 auto;
+  }
 }
 
 .stock_btn:hover {
