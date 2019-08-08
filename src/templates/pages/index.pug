@@ -40,8 +40,8 @@ html(lang="ru")
                             .main_content-title Что такое Lorem Ipsum?
                             .main_content-text Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
                             .main_form
-                                form(action="#", method="post")
-                                    input(type="text" placeholder="+380 (_ _) ___ __ __")
+                                form(action="#", method="post")#formCall
+                                    input(type="text" placeholder="+380 (_ _) ___ __ __" required)
                                     button(type="submit") Заказать звонок
                                     p *мы перезвоним Вам в течение 20 минут   
                         .main_paralax
@@ -4428,14 +4428,14 @@ html(lang="ru")
                                         .reviews_content-name Джон Доусон
                 section.form
                     .form_wrap
-                        form(action="#", method="post").form_form
+                        form(action="form.php", method="post")#form.form_form
                             .form_title Переезд - смелое решение
                             .form_text Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова
                             .form_form-input
                                 label Ваше имя
-                                    input(type="text" placeholder="Как к Вам обращаться")
+                                    input(type="text" placeholder="Как к Вам обращаться" required)
                                 label Ваш номер
-                                    input(type="text" placeholder="+380 (__) ___ __ __")
+                                    input(type="text" placeholder="+380 (__) ___ __ __" required)
                                 button(type="submit").form_btn заказать звонок
             footer.footer
                 .footer_wrap
@@ -4456,6 +4456,25 @@ html(lang="ru")
                         img(src="assets/images/icons/phone-call.svg", alt="phone")
                         div 123
                 .footer_copyrights Cargo. Development by AS - All right reserves
+            .form-store-success
+                .form-store-success_content
+                    .form-store-success_content-img
+                        img(src="assets/images/content/copter.svg", alt="balun")
+                    .form-store-success_content-text Заявка отправлена
+            .form-store
+                .form-store_content
+                    .form-store_content-cross
+                        .form-store_content-cross-line
+                    .form-store_content-title Грузчики в подарок
+                    .form-store_content-text Заказывай самую большую грузовую машину на два часа и получи в помощь двух бравых молодцов&nbsp;грузчиков просто так
+                    form(action="storeForm.php", method="post")#formStore
+                        label.form-store_label
+                            .form-store_label-title Ваше имя
+                            input(type="text" placeholder="Как к Вам обращаться" required).form-store_label-input
+                        label.form-store_label
+                            .form-store_label-title Ваш номер
+                            input(type="text" placeholder="+380 (__) ___ __ __" required).form-store_label-input
+                        button(type="submit").form-store_btn Заказать услугу
         script(type='text/javascript', src='//code.jquery.com/jquery-1.11.0.min.js')
         script(type='text/javascript', src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
         script(type='text/javascript', src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')

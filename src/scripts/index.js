@@ -16,3 +16,9 @@ nav();
 
 const scrollAnimate = require('./component/scrollAnimate.js');
 scrollAnimate();
+
+const store = require('./component/store.js');
+store();
+
+const submitForm = require('./component/submitForm.js');
+submitForm();

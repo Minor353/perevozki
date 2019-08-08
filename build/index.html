@@ -36,8 +36,8 @@
               <div class="main_content-title">Что такое Lorem Ipsum?</div>
               <div class="main_content-text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.</div>
               <div class="main_form">
-                <form action="#" method="post">
-                  <input type="text" placeholder="+380 (_ _) ___ __ __"/>
+                <form action="#" method="post" id="formCall">
+                  <input type="text" placeholder="+380 (_ _) ___ __ __" required="required"/>
                   <button type="submit">Заказать звонок</button>
                   <p>*мы перезвоним Вам в течение 20 минут   </p>
                 </form>
@@ -2908,15 +2908,15 @@
         </section>
         <section class="form">
           <div class="form_wrap">
-            <form class="form_form" action="#" method="post">
+            <form class="form_form" action="form.php" method="post" id="form">
               <div class="form_title">Переезд - смелое решение</div>
               <div class="form_text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова</div>
               <div class="form_form-input">
                 <label>Ваше имя
-                  <input type="text" placeholder="Как к Вам обращаться"/>
+                  <input type="text" placeholder="Как к Вам обращаться" required="required"/>
                 </label>
                 <label>Ваш номер
-                  <input type="text" placeholder="+380 (__) ___ __ __"/>
+                  <input type="text" placeholder="+380 (__) ___ __ __" required="required"/>
                 </label>
                 <button class="form_btn" type="submit">заказать звонок</button>
               </div>
@@ -2940,6 +2940,32 @@
         </div>
         <div class="footer_copyrights">Cargo. Development by AS - All right reserves</div>
       </footer>
+      <div class="form-store-success">
+        <div class="form-store-success_content">
+          <div class="form-store-success_content-img"><img src="assets/images/content/copter.svg" alt="balun"/></div>
+          <div class="form-store-success_content-text">Заявка отправлена</div>
+        </div>
+      </div>
+      <div class="form-store">
+        <div class="form-store_content">
+          <div class="form-store_content-cross">
+            <div class="form-store_content-cross-line"></div>
+          </div>
+          <div class="form-store_content-title">Грузчики в подарок</div>
+          <div class="form-store_content-text">Заказывай самую большую грузовую машину на два часа и получи в помощь двух бравых молодцов&nbsp;грузчиков просто так</div>
+          <form action="storeForm.php" method="post" id="formStore">
+            <label class="form-store_label">
+              <div class="form-store_label-title">Ваше имя</div>
+              <input class="form-store_label-input" type="text" placeholder="Как к Вам обращаться" required="required"/>
+            </label>
+            <label class="form-store_label">
+              <div class="form-store_label-title">Ваш номер</div>
+              <input class="form-store_label-input" type="text" placeholder="+380 (__) ___ __ __" required="required"/>
+            </label>
+            <button class="form-store_btn" type="submit">Заказать услугу</button>
+          </form>
+        </div>
+      </div>
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
