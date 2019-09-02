@@ -1,3 +1,8 @@
+.msg {
+  display: none;
+}
+
+
 .msg_wrap {
   max-width: 1400px;
   padding: 25px 15px;
@@ -32,13 +37,14 @@
 }
 
 .msg_link {
+  display: none;
   text-decoration: none;
   background: #FFFFFF;
   /* blue_shadow */
 
   box-shadow: 0px 7px 15px rgba(0, 42, 179, 0.25);
   border-radius: 25px;
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   padding: 8px 40px;
   width: min-content;
