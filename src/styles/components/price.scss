@@ -93,6 +93,7 @@
   color: #333333;
   border: 1px solid #DBDBFF;
   border-top-color: transparent;
+  border-bottom-color: transparent;
   transition: 0.3s;
 
   @include phone() {
@@ -150,6 +151,9 @@
   }
 }
 
+.price_tabs-item:last-child {
+  border-right-color: transparent;
+}
 
 
 .price_tabs-content {
@@ -181,7 +185,7 @@
 }
 
 .price_content-item-img {
-  margin-right: 30px;
+  margin-right: 10px;
 
   @include phone() {
     margin: 0;
